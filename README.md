@@ -4,7 +4,7 @@ ios 富文本(图文混排):支持图片，文字，GIF表情
 
 Thanks For:[FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
 
-###字符串解析格式:
+##字符串解析格式:
     - []: 对括号内的内容解析
   	- /:  正常文本与属性内容的分隔
   	- =:  属性名=属性值
