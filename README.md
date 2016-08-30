@@ -12,11 +12,11 @@ Thanks For:[FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
   	
 ###预定义属性字段:
     整段文字默认设置(字体颜色,大小):[defc=#ARGB&defs=20]
-    文字(字体颜色,大小):            [文字/c=#ARGB&s=20]
-    图片(宽度,高度):                [/image=图片名&w=100&h=100]
-    表情:                           [/emoj=表情名]
-    链接:                           [文字/link={json}]
-    换行:                           \n
+    文字(字体颜色,大小):          [文字/c=#ARGB&s=20]
+    图片(宽度,高度):            [/image=图片名&w=100&h=100]
+    表情:                     [/emoj=表情名]
+    链接:                     [文字/link={json}]
+    换行:                     \n
     
 ###示例文本:
   [/defs=22&defc=#FF000000]<br>
