@@ -148,7 +148,7 @@ enum LINKTYPE
     
     
     YMMessage* message = [messageArray objectAtIndex:indexPath.row];
-    float messageWidth = [UIScreen mainScreen].bounds.size.width - HEAD_WIDTH - HEAD_SPACE;
+    float messageWidth = [UIScreen mainScreen].bounds.size.width - HEAD_WIDTH*2 - HEAD_SPACE;
     
     // 头像
     UIImageView* headImageView = nil;
@@ -159,7 +159,7 @@ enum LINKTYPE
     else
     {
         headImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"head2.jpg"]];
-        headImageView.frame = CGRectMake(messageWidth + HEAD_SPACE, 0, HEAD_WIDTH, HEAD_WIDTH);
+        headImageView.frame = CGRectMake(messageWidth + HEAD_WIDTH + HEAD_SPACE, 0, HEAD_WIDTH, HEAD_WIDTH);
     }
   
     headImageView.tag = 1;
@@ -179,7 +179,7 @@ enum LINKTYPE
         UIImage* image = [UIImage imageNamed:@"chatto_bg_normal.png"];
         [bubbleText setOffset:CGRectMake(10, 10, 20, 10)];
         [bubbleText setStretchableImage:image LeftCapWidth:image.size.width*0.5 topCapHeight:image.size.height * 0.7];
-        [bubbleText setPosition:CGPointMake(0, 0)];
+        [bubbleText setPosition:CGPointMake(HEAD_WIDTH, 0)];
     }
     [bubbleText setMaxLineWidth:messageWidth];
     [bubbleText addTarget:self clickAction:@selector(onClickLinkLabel:)];
